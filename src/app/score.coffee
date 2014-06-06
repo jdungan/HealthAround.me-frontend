@@ -31,7 +31,7 @@ class ScoreRoutes extends Config
                 url: 'bubble/'
                 views:
                     '':
-                        templateUrl: 'bubble.html'
+                        templateUrl: 'bubble/bubble.html'
                         controller: 'bubbleController'
                     'header':
                         template: 'bubble'
