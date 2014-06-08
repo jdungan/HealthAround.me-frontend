@@ -57,6 +57,7 @@ class Cards extends Controller
     constructor: ($scope, $state, $stateParams) ->
 
 
+
 angular.module('ham').filter 'letter_score', ->
     (score) ->
         # only work with da numbars
