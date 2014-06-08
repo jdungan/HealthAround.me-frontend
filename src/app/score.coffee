@@ -27,15 +27,6 @@ class ScoreRoutes extends Config
                     'header@':
                         template: 'Cards'
             )
-            .state('score.bubble'
-                url: 'bubble/'
-                views:
-                    'content@':
-                        templateUrl: 'bubble/bubble.html'
-                        controller: 'bubbleController'
-                    'header@':
-                        template: 'bubble'
-            )
             .state('score.detail',
                 url: 'detail/:boundary_slug/:metric_slug/'
                 views:
@@ -51,6 +42,15 @@ class ScoreRoutes extends Config
                     detail: ['scoreService', '$stateParams', (scores, $stateParams) ->
                         return scores.detail($stateParams)
                     ]
+            )
+            .state('score.bubble'
+                url: 'bubble/'
+                views:
+                    '':
+                        templateUrl: 'bubble.html'
+                        controller: 'bubbleController'
+                    'header':
+                        template: 'bubble'
             )
 
 class Cards extends Controller
