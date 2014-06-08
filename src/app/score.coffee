@@ -46,15 +46,19 @@ class ScoreRoutes extends Config
             .state('score.bubble'
                 url: 'bubble/'
                 views:
-                    '':
-                        templateUrl: 'bubble.html'
-                        controller: 'bubbleController'
+                    'content@':
+                        templateUrl: 'bubble/bubble.html'
+                        controller: 'bubblesController'
                     'header':
                         template: 'bubble'
             )
 
 class Cards extends Controller
     constructor: ($scope, $state, $stateParams) ->
+
+class Bubbles extends Controller
+    constructor: ($scope, $state, $stateParams) ->
+
 
 
 
